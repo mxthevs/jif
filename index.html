@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jif</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <section>
@@ -12,6 +13,29 @@
     <button data-id="start">start recording</button>
     <button data-id="stop">stop recording</button>
   </section>
+
+  <section>
+    <h2>webm / mp4 to gif conversion</h2>
+    <input type="file" data-id="webm_input" accept="video/webm,video/mp4" />
+    <div>
+      <video data-id="video"></video>
+    </div>
+
+    <div>
+      <button data-id="convert">convert</button>
+    </div>
+
+    <div data-id="info_message">
+      <b>Converting... this can take a while depeding on the video resolution...</b>
+    </div>
+
+    <div>
+      <img data-id="result"></img>
+    </div>
+  </section>
+
+  <script src="/js/vendor/gif.min.js"></script>
   <script src="/js/recorder.js"></script>
+  <script src="/js/webm_to_gif.js"></script>
 </body>
 </html>
