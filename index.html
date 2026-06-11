@@ -17,8 +17,21 @@
   <section>
     <h2>webm / mp4 to gif conversion</h2>
     <input type="file" data-id="webm_input" accept="video/webm,video/mp4" />
+
     <div>
-      <video data-id="video"></video>
+      <label>
+        <input type="checkbox" data-id="boomerang" />
+        boomerang
+      </label>
+    </div>
+
+    <div>
+      <video
+        data-id="video"
+        controls
+        muted
+        playsinline
+      ></video>
     </div>
 
     <div>
@@ -26,7 +39,7 @@
     </div>
 
     <div data-id="info_message">
-      <b>Converting... this can take a while depeding on the video resolution...</b>
+      <b>Converting... this can take a while depending on the video resolution...</b>
     </div>
 
     <div>
